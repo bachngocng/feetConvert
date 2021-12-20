@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feet convert to Meter</title>
+</head>
+<body>
+<input id="m" type="number" placeholder="nhập số meter" value="" oninput="mToF()">Meter
+<br>
+<input id="mtof" >Chuyển từ meter sang feet</input>
+<br>
+<input id="ft" type="number" placeholder="nhập số feet" value="" oninput="fToM()">Feet
+<br>
+<input id="ftom" >Chuyển từ feet sang meter</input>
+
+<script>
+    function fToM() {
+        let foot = parseFloat(document.getElementById("ft").value)
+        meter = foot * 0.305
+        document.getElementById("ftom").value = meter;
+    }
+
+    function mToF() {
+        let meter = parseFloat(document.getElementById("m").value)
+        foot = meter * 3.279;
+        document.getElementById("mtof").value = foot;
+    }
+</script>
+</body>
+</html>
